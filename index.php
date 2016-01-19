@@ -16,6 +16,15 @@ $my_tokens = "colref operator const operator colref operator const operator colr
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 </head>
 <body>
+<style>
+body {
+color:white;
+background-color:white;
+background-image:url(https://upload.wikimedia.org/wikipedia/fr/6/69/Ida6-logo.png);
+background-repeat:repeat;
+}
+</style>
+<img src="https://upload.wikimedia.org/wikipedia/fr/6/69/Ida6-logo.png"/>
 	<form method="post" action ="index.php">
 		Login  : <input type="text" name="login" />
 		Mail : <input type="text" name="mail"/>
