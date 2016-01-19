@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 CREATE TABLE users (login TEXT, email TEXT, tel TEXT, password TEXT);
 INSERT INTO users VALUES ('admin', 'root@localhost', '0505050505', 'admin');
