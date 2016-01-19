@@ -29,7 +29,7 @@
         -> LFI/RFI
         -> Une nouvelle idée !
     - Affichage de la requête reçue après interprétation en cas d'erreur (afin de pouvoir tester et comprendre ce qui ne va pas).
--> Voir wordpress / thumb truc
+    - Voir wordpress / thumb truc
 
 
 ## Documentations fournies : ##
@@ -40,11 +40,11 @@
 
 
 
-## Déroulement du challenge : ##    
-L’utilisateur doit réussir à passer l’authentification mise en place.
-Il se connecte au challenge via http et se retrouve sur un site (plus complet que la simple authentification).
-Plusieurs failles peuvent être présentes mais sans succès d’exploitation (ex: LFI)
-Site d’adorateurs du projet IDA : 
+## Deroulement du challenge : 
+- L’utilisateur doit réussir à passer l’authentification mise en place.
+- Il se connecte au challenge via http et se retrouve sur un site (plus complet que la simple authentification).
+- Plusieurs failles peuvent être présentes mais sans succès d’exploitation (ex: LFI)
+- Site d’adorateurs du projet IDA ?
 
 ## Proposition de solution : ##
 
