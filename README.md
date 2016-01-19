@@ -1,17 +1,17 @@
 #################################################################
 #                                                		#
 #                    Challenge Root-Me                        	#
-#                Nom du challenge :                         	#
+#                Nom du challenge : NON DEFINI                  #
 #                                               		#
 #################################################################
 
-## Intitulé du challenge : ##
+## Intitulé du challenge : NON DEFINI ##
 Éric(André) est confiant dans son nouveau système d’authentification…
 
 
-## Catégorie du challenge : ##
- - Réaliste ?
-    - Web Serveur
+## Catégorie du challenge : NON DEFINI ##
+ - Réaliste 
+ - Web Serveur
 
 
 ## Objectif(s) du challenge : ##
