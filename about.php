@@ -44,7 +44,7 @@
       <p class="date"><img src="images/comment.gif" alt="" /> <a href="#">Comments(8)</a> <img src="images/timeicon.gif" alt="" /> 13.46.</p>
     </div>
   </div>
-  <?php include_once("footer.php");?>
+  <?php include_once("footer.php")?>
 </div>
 </body>
 </html>
