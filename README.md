@@ -6,10 +6,10 @@
 #################################################################
 
 ## Intitulé du challenge : NON DEFINI ##
-Éric(André) est confiant dans son nouveau système d’authentification…
+André est confiant dans son nouveau système d’authentification…
 
 
-## Catégorie du challenge : NON DEFINI ##
+## Catégorie du challenge : NON DEFINIE ##
  - Réaliste 
  - Web Serveur
 
