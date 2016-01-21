@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title>MyFirstCssTemplate</title>
+<title>Bio & Vegans</title>
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 <style type="text/css" media="all">
 @import "images/style.css";
@@ -11,7 +11,7 @@
 <div id="page-container">
   <div id="top"> <a href="login.php">Login</a> | <a href="about.php">Contact</a>
     <div class="comment"> Search on the Website:
-      <input type="text" name="search" class="search" value="Available soon ..." disabled/>
+      <input type="text" name="search" class="search" value="Available soon ..."/>
       <input type="submit" value="Search" class="submit" />
     </div>
   </div>
@@ -30,18 +30,19 @@
 	</div>
   <div id="content">
     <div class="padding">
-      <h2>Green Grass</h2>
-      <br />
-      <h4><a href="#">PROVIDING THE BEST CMS SOLUTONS</a></h4>
-      <br />
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...</p>
-      <p class="date"><img src="images/comment.gif" alt="" /> <a href="#">Comments(2)</a> <img src="images/timeicon.gif" alt="" /> 21.02.</p>
-      <h4><a href="#">COMPILING STATISTICS</a></h4>
-      <br />
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...</p>
-      <p class="date"><img src="images/comment.gif" alt="" /> <a href="#">Comments(8)</a> <img src="images/timeicon.gif" alt="" /> 13.46.</p>
+      <h2>Please login</h2>
+      <br /> 
+      <form action='#' method='post'>
+			<fieldset>
+	 			Login : <br>
+				<input type='text' name='log'/><br/>
+				Mail  : <br>
+				<input type='mail' name='mail'/><br/>
+				Pass  : <br>
+				<input type='password' name='pass'/><br/>
+				<input type='submit' value='Submit'/><br/>
+			</fieldset>
+		</form>
     </div>
   </div>
   <?php include_once("footer.php");?>
