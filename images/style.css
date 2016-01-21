@@ -311,3 +311,13 @@ font-size: 11px;
 .underline {
 	text-decoration: underline;
 }
+
+.bad_login {
+	color: #CC0000;
+	font-size: 1.3em;
+}
+
+.good_login {
+	color: #2D862D;
+	font-size: 1.3em;
+}

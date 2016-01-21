@@ -1,3 +1,56 @@
+<?php
+
+$check_login = '';
+$value_login = 0;
+$information = "";
+
+# Check POST variables
+if(isset($_POST['login']) && $_POST['login'] != '' && isset($_POST['mail']) && $_POST['mail'] != '' && isset($_POST['password']) && $_POST['password'] != '')
+{
+	include(dirname(__FILE__) .'/plugins/PHP-SQL-Parser/src/PHPSQLParser.php');
+	$valid_tokens = "colref operator const operator colref operator const operator colref operator const ";
+	
+	$l = $_POST["login"];
+        $e = $_POST["mail"];
+        $p = $_POST["password"];
+
+
+        $sql = "SELECT * FROM users WHERE login = \"$l\" and email = \"$e\" and password = '".$p."'";
+        try {
+	$parser = new PHPSQLParser($sql, true);
+        }catch(Exception $e) {
+            $information = $e->getMessage();
+        }
+	
+	$tokens = "";
+        
+        foreach ($parser->parsed["WHERE"] as $key => $value)
+        {
+                $tokens .= $value["expr_type"] . " ";
+        }
+        
+	
+	if($tokens === $valid_tokens)
+        {
+              $db = new PDO('sqlite:'.dirname(__FILE__).'/config/database.db');
+              $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	      $statement = $db->query($sql);
+              if($statement->fetchColumn() != false)
+              {
+		    $flag = "FLAG A DEFINIR ET PLACER";
+                    $check_login = "Congratulations ! You can now validate with the flag : ".$flag;
+                    $value_login = 1;
+		} else {
+                    $check_login = "Bad login, mail or password";
+		    $value_login = -1;
+              }
+        } else {
+                $check_login = "SQL Injection detected, administrator has been notified !";
+		$value_login = -1;
+        }
+}
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
@@ -32,17 +85,28 @@
     <div class="padding">
       <h2>Please login</h2>
       <br /> 
-      <form action='#' method='post'>
+      <form action='login.php' method='post'>
 			<fieldset>
 	 			Login : <br>
-				<input type='text' name='log'/><br/>
+				<input type='text' name='login'/><br/>
 				Mail  : <br>
 				<input type='mail' name='mail'/><br/>
 				Pass  : <br>
-				<input type='password' name='pass'/><br/>
-				<input type='submit' value='Submit'/><br/>
+				<input type='password' name='password'/><br/>
+				<br>
+				<input type='submit' value='Connect'/><br/>
 			</fieldset>
 		</form>
+	<br>
+	<div id='check_login' class=
+				<?php 
+					if ($value_login != 1)
+						echo "'bad_login'";
+					else
+						echo "'good_login'";		
+				?> ><?php echo $check_login;
+					if ($information != "")
+						echo "<br><br>Warning : ".$information; ?></div>
     </div>
   </div>
   <?php include_once("footer.php");?>
