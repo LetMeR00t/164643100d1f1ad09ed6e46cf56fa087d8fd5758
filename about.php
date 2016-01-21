@@ -34,6 +34,7 @@
 	<p>
 	<b>Unfortunately, we don't provide new accounts for the moment, thank you for your consideration.
 	</b></p>
+</div>
  </div>
   <?php include_once("footer.php")?>
 </div>
