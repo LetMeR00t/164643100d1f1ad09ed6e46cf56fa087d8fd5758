@@ -1,12 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-<head>
-<title>MyFirstCssTemplate</title>
-<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-<style type="text/css" media="all">
-@import "images/style.css";
-</style>
-</head>
+<?php include_once("head.php"); ?>
 <body>
 <div id="page-container">
   <div id="top"> <a href="login.php">Login</a> | <a href="about.php">Contact</a>
@@ -30,20 +24,17 @@
 	</div>
   <div id="content">
     <div class="padding">
-      <h2>Green Grass</h2>
+      <h2>About Bio & Vegans</h2>
       <br />
-      <h4><a href="#">PROVIDING THE BEST CMS SOLUTONS</a></h4>
+      <h4>PROVIDING A GOOD FUTURE FOR OUR WORLD</h4>
       <br />
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...</p>
-      <p class="date"><img src="images/comment.gif" alt="" /> <a href="#">Comments(2)</a> <img src="images/timeicon.gif" alt="" /> 21.02.</p>
-      <h4><a href="#">COMPILING STATISTICS</a></h4>
-      <br />
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...</p>
-      <p class="date"><img src="images/comment.gif" alt="" /> <a href="#">Comments(8)</a> <img src="images/timeicon.gif" alt="" /> 13.46.</p>
-    </div>
-  </div>
+	<p>
+	Our website is about the protection of the environment and will provide solutions for that. If you want to join us, please contact the administrator and he will give you a free account.
+	</p> 
+	<p>
+	<b>Unfortunately, we don't provide new accounts for the moment, thank you for your consideration.
+	</b></p>
+ </div>
   <?php include_once("footer.php")?>
 </div>
 </body>

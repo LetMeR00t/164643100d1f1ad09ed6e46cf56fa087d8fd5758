@@ -1,12 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-<head>
-<title>MyFirstCssTemplate</title>
-<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-<style type="text/css" media="all">
-@import "images/style.css";
-</style>
-</head>
+<?php include_once("head.php");?>
 <body>
 <div id="page-container">
   <div id="top"> <a href="login.php">Login</a> | <a href="about.php">Contact</a>
