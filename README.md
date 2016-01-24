@@ -42,9 +42,8 @@ André est confiant dans son nouveau système d’authentification…
 
 ## Deroulement du challenge : 
 - L’utilisateur doit réussir à passer l’authentification mise en place.
-- Il se connecte au challenge via http et se retrouve sur un site (plus complet que la simple authentification).
+- Le mot de passe a trouvé pour le challenge est celui de l'administrateur qui se trouve dans la base au format MD5 (qu'il devra craquer une fois récupéré)
 - Plusieurs failles peuvent être présentes mais sans succès d’exploitation (ex: LFI)
-- Site d’adorateurs du projet IDA ?
 
 ## Proposition de solution : ##
 

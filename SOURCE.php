@@ -16,15 +16,6 @@ $my_tokens = "colref operator const operator colref operator const operator colr
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 </head>
 <body>
-<style>
-body {
-color:white;
-background-color:white;
-background-image:url(https://upload.wikimedia.org/wikipedia/fr/6/69/Ida6-logo.png);
-background-repeat:repeat;
-}
-</style>
-<img src="https://upload.wikimedia.org/wikipedia/fr/6/69/Ida6-logo.png"/>
 	<form method="post" action ="SOURCE.php">
 		Login  : <input type="text" name="login" />
 		Mail : <input type="text" name="mail"/>
@@ -33,14 +24,12 @@ background-repeat:repeat;
 	</form>
 
 <?php
-if (isset($_POST["login"]) and isset($_POST["mail"]) and isset($_POST["password"]))
-{
 	try {
 		srand(time());
 	    $db = new PDO('sqlite:'.dirname(__FILE__) .'/config/database.db');
 	    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	    $db->query("CREATE TABLE users (login TEXT, email TEXT, tel TEXT, password TEXT);");
-	    $db->query("INSERT INTO users VALUES ('admin', 'admin@mail.fr', '0505050505', '".sha1(rand())."');");
+	    $db->query("INSERT INTO users VALUES ('admin', 'admin@mail.fr', '0505050505', '".md5(rand(1000000,10000000))."');");
 	} catch(Exception $e) {
 	    echo "Impossible d'accéder à la base de données SQLite : ".$e->getMessage();
 	    die();
@@ -82,8 +71,6 @@ if (isset($_POST["login"]) and isset($_POST["mail"]) and isset($_POST["password"
 
 
 */
-
-}
 ?>
 </body>
 </html>

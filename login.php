@@ -35,10 +35,10 @@ if(isset($_POST['login']) && $_POST['login'] != '' && isset($_POST['mail']) && $
               $db = new PDO('sqlite:'.dirname(__FILE__).'/config/database.db');
               $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	      $statement = $db->query($sql);
-              if($statement->fetchColumn() != false)
+              if(($columns = $statement->fetch()) !== false)
               {
-		    $flag = "FLAG A DEFINIR ET PLACER";
-                    $check_login = "Congratulations ! You can now validate with the flag : ".$flag;
+		    $flag = $columns["password"];
+                    $check_login = "Congratulations ! Administrator password is :<br>".$flag;
                     $value_login = 1;
 		} else {
                     $check_login = "Bad login, mail or password";
