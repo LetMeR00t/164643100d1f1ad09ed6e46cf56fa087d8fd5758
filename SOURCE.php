@@ -29,7 +29,7 @@ $my_tokens = "colref operator const operator colref operator const operator colr
 	    $db = new PDO('sqlite:'.dirname(__FILE__) .'/config/database.db');
 	    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	    $db->query("CREATE TABLE users (login TEXT, email TEXT, tel TEXT, password TEXT);");
-	    $db->query("INSERT INTO users VALUES ('admin', 'admin@mail.fr', '0505050505', '".md5(rand(1000000,10000000))."');");
+	    $db->query("INSERT INTO users VALUES ('admin', 'admin@mail.fr', '0505050505', 'G1v3M3Th3P455Dude');");
 	} catch(Exception $e) {
 	    echo "Impossible d'accéder à la base de données SQLite : ".$e->getMessage();
 	    die();
