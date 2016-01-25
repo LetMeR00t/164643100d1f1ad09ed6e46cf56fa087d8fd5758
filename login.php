@@ -19,7 +19,7 @@ if(isset($_POST['login']) && $_POST['login'] != '' && isset($_POST['mail']) && $
         try {
 	$parser = new PHPSQLParser($sql, true);
         }catch(Exception $e) {
-            $information = $e->getMessage();
+            $information = "Problem with quotes";
         }
 	
 	$tokens = "";
@@ -28,8 +28,7 @@ if(isset($_POST['login']) && $_POST['login'] != '' && isset($_POST['mail']) && $
         {
                 $tokens .= $value["expr_type"] . " ";
         }
-        
-	
+
 	if($tokens === $valid_tokens)
         {
               $db = new PDO('sqlite:'.dirname(__FILE__).'/config/database.db');
@@ -47,6 +46,10 @@ if(isset($_POST['login']) && $_POST['login'] != '' && isset($_POST['mail']) && $
         } else {
                 $check_login = "SQL Injection detected, administrator has been notified !";
 		$value_login = -1;
+		if ($information == "")
+		{
+			$check_login .= "<br><br/><div id='information_parseur'>Expected :<br><br>" . $valid_tokens . "<br><br>But received :<br><br>" . $tokens."</div>";
+		}
         }
 }
 ?>
