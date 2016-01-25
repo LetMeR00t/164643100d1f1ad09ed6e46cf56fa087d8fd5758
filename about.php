@@ -29,7 +29,7 @@
       <h4>PROVIDING A GOOD FUTURE FOR OUR WORLD</h4>
       <br />
 	<p>
-	Our website is about the protection of the environment and will provide solutions for that. If you want to join us, please contact the administrator and he will give you a free account.
+	Our website is about the practice of abstaining from the use of animal products, particularly in diet, and an associated philosophy that rejects the commodity status of animals. It's also about the protection of the environment and will provide solutions for that. If you want to join us, please contact the administrator and he will give you a free account.
 	</p> 
 	<p>
 	<b>Unfortunately, we don't provide new accounts for the moment, thank you for your consideration.

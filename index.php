@@ -24,18 +24,21 @@
 	</div>
   <div id="content">
     <div class="padding">
-      <h2>Green Grass</h2>
+      <h2>Welcome on Bio & Vegans website</h2>
       <br />
-      <h4><a href="#">PROVIDING THE BEST CMS SOLUTONS</a></h4>
+      <h4><a href="#">Eggs, dairy, honey, silk</a></h4>
       <br />
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...</p>
-      <p class="date"><img src="images/comment.gif" alt="" /> <a href="#">Comments(2)</a> <img src="images/timeicon.gif" alt="" /> 21.02.</p>
-      <h4><a href="#">COMPILING STATISTICS</a></h4>
+	<p>
+The main difference between a vegan and vegetarian diet is that vegans exclude eggs and dairy products. Ethical vegans avoid them on the premise that their production causes animal suffering and premature death. In egg production, most male chicks are culled because they do not lay eggs. To obtain milk from dairy cattle, cows are made pregnant to induce lactation; they are kept pregnant and lactating for three to seven years, then slaughtered. Female calves are separated from their mothers within 24 hours of birth, and fed milk replacer to retain the cow's milk for human consumption. Male calves are slaughtered at birth, sent for veal production, or reared for beef.
+	</p>      
+<p class="date"><a href="#">Source: Wikipedia</a> 02:42pm.</p>
+      <h4><a href="#">Why go vegan ?</a></h4>
       <br />
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...</p>
-      <p class="date"><img src="images/comment.gif" alt="" /> <a href="#">Comments(8)</a> <img src="images/timeicon.gif" alt="" /> 13.46.</p>
+      <p>
+	For your health !<br>
+More and more people are turning to a vegan diet for the health benefits: increased energy, younger looking skin and eternal youth are just some of the claims from enthusiastic plant eaters. Well, eternal youth might be a bit optimistic, but there are certainly many scientifically proven benefits to vegan living when compared to the average western diet.
+	</p>
+	<p class="date"> <a href="#">Source: The Vegan Society</a> 09.46am.</p>
     </div>
   </div>
   <?php include_once("footer.php");?>
