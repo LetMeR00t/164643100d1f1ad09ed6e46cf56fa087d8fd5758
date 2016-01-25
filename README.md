@@ -1,16 +1,15 @@
 #################################################################
 #                                                		#
 #                    Challenge Root-Me                        	#
-#                Nom du challenge : NON DEFINI                  #
 #                                               		#
 #################################################################
 
-## Intitulé du challenge : NON DEFINI ##
-André est confiant dans son nouveau système d’authentification…
+## Intitulé du challenge : SQL Injection - Contournement d'un parseur ##
+André est confiant dans son nouveau système d’authentification.
+Votre but est de retrouver le mot de passe d'André l'administrateur.
 
 
-## Catégorie du challenge : NON DEFINIE ##
- - Réaliste 
+## Catégorie du challenge : ##
  - Web Serveur
 
 
@@ -23,13 +22,7 @@ André est confiant dans son nouveau système d’authentification…
 
 
 ## Idées d'exploitations supplémentaires : ##
-- Récupération de code source PHP via un autre procédé (ci-dessous une liste non exhaustive)
-    -> Utilisation de PHP Wrapper
-    -> Fichier de sauvegarde oublié
-    -> LFI/RFI
-    -> Une nouvelle idée !
 - Affichage de la requête reçue après interprétation en cas d'erreur (afin de pouvoir tester et comprendre ce qui ne va pas).
-- Voir wordpress / thumb truc
 
 
 ## Documentations fournies : ##
@@ -42,8 +35,6 @@ André est confiant dans son nouveau système d’authentification…
 
 ## Deroulement du challenge : 
 - L’utilisateur doit réussir à passer l’authentification mise en place.
-- Le mot de passe a trouvé pour le challenge est celui de l'administrateur qui se trouve dans la base au format MD5 (qu'il devra craquer une fois récupéré)
-- Plusieurs failles peuvent être présentes mais sans succès d’exploitation (ex: LFI)
 
 ## Proposition de solution : ##
 
